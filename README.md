@@ -6,6 +6,6 @@ TECHNOLOGIES USED:
 
 - ASP.NET
 - WPF
-- SSMS (SQL Servber Management Studio) (possibly)
+- EFC (Entity Framework Core) (possibly)
 - Azure (possibly)
 
