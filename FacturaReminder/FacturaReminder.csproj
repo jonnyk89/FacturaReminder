@@ -10,12 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="Theme\" />
-    <Folder Include="Images\" />
     <Folder Include="MVVM\Models\" />
-    <Folder Include="MVVM\ViewModels\" />
-    <Folder Include="MVVM\Views\" />
-    <Folder Include="Core\" />
   </ItemGroup>
 
 </Project>
