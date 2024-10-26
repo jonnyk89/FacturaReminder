@@ -36,7 +36,8 @@
                        HorizontalAlignment="Left"
                        Foreground="White"
                        FontSize="22"
-                       Margin="20, 0, 0, 0">
+                       Margin="20, 0, 0, 0"
+                       FontFamily="/Fonts/#Poppins">
             </TextBlock>
 
             <StackPanel Grid.Row="1">
@@ -44,13 +45,16 @@
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="Facturas"
+                <RadioButton Content="Tasks"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding TasksViewCommand}"/>
 
                 <RadioButton Content="Profiles"
                              Height="50"

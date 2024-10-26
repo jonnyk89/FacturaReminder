@@ -9,7 +9,12 @@ namespace FacturaReminder.MVVM.ViewModels
 {
     public class MainViewModel : ObservableObject
     {
+        public RelayCommand HomeViewCommand { get; set; }
+        public RelayCommand TasksViewCommand { get; set; }
+
         public HomeViewModel HomeVM { get; set; }
+
+        public TasksViewModel TasksVM { get; set; }
 
         private object _currentView;
 
@@ -27,7 +32,18 @@ namespace FacturaReminder.MVVM.ViewModels
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
+            TasksVM = new TasksViewModel();
             CurrentView = HomeVM;
+
+            HomeViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = HomeVM;
+            });
+
+            TasksViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = TasksVM;
+            });
         }
     }
 }
