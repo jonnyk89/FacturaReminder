@@ -63,13 +63,14 @@
                              Style="{StaticResource MenuButtonTheme}"/>
 
                 <RadioButton Content="Settings"
-                                Height="50"
-                                Foreground="White"
-                                FontSize="14"
-                                Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
             </StackPanel>
 
-            <TextBox VerticalAlignment="Center"
+            <TextBox Visibility="{Binding SearchVisibility}"
+                     VerticalAlignment="Center"
                      HorizontalAlignment="Left"
                      Margin="50, 5, 5, 5"
                      Grid.Column="1"
